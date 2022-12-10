@@ -1,0 +1,123 @@
+body {
+  overflow: hidden;
+  background: #000;
+}
+body * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+}
+
+.switcher {
+  transform: rotateX(35.26deg);
+  animation: switch 3s steps(1) infinite;
+}
+
+@keyframes switch {
+  50% {
+    transform: rotateX(35.26deg) rotateY(-90deg);
+  }
+}
+.assembly {
+  transform: rotateY(45deg);
+  animation: correct 1.5s linear infinite;
+}
+
+@keyframes correct {
+  to {
+    transform: rotateY(45deg) translate(-10em);
+  }
+}
+.piece {
+  animation: inherit;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.53, 2);
+}
+.piece:nth-child(1) {
+  margin-top: -4em;
+  animation-name: slide-1;
+}
+@keyframes slide-1 {
+  0%, 0% {
+    transform: none;
+  }
+  40%, 100% {
+    transform: translate(10em);
+  }
+}
+.piece:nth-child(2) {
+  margin-top: -2em;
+  animation-name: slide-2;
+}
+@keyframes slide-2 {
+  0%, 15% {
+    transform: none;
+  }
+  55%, 100% {
+    transform: translate(10em);
+  }
+}
+.piece:nth-child(3) {
+  margin-top: 0em;
+  animation-name: slide-3;
+}
+@keyframes slide-3 {
+  0%, 30% {
+    transform: none;
+  }
+  70%, 100% {
+    transform: translate(10em);
+  }
+}
+.piece:nth-child(4) {
+  margin-top: 2em;
+  animation-name: slide-4;
+}
+@keyframes slide-4 {
+  0%, 45% {
+    transform: none;
+  }
+  85%, 100% {
+    transform: translate(10em);
+  }
+}
+.piece:nth-child(5) {
+  margin-top: 4em;
+  animation-name: slide-5;
+}
+@keyframes slide-5 {
+  0%, 60% {
+    transform: none;
+  }
+  100%, 100% {
+    transform: translate(10em);
+  }
+}
+.face {
+  margin: -1em -5em;
+  width: 10em;
+  height: 2em;
+  box-shadow: inset 0 0 0 2px #fff;
+}
+.face:nth-child(n + 5) {
+  margin-top: -5em;
+  height: 10em;
+}
+.face:nth-child(1) {
+  transform: rotateY(0deg) translateZ(5em);
+}
+.face:nth-child(2) {
+  transform: rotateY(90deg) translateZ(5em);
+}
+.face:nth-child(3) {
+  transform: rotateY(180deg) translateZ(5em);
+}
+.face:nth-child(4) {
+  transform: rotateY(270deg) translateZ(5em);
+}
+.face:nth-child(5) {
+  transform: rotateX(90deg) translateZ(1em);
+}
+.face:nth-child(6) {
+  transform: rotateX(-90deg) translateZ(1em);
+}
