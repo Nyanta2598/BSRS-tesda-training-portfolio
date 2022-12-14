@@ -35,7 +35,7 @@
     </div>
   </div>
   <section>
-    <div class="section grey darken-4 ">
+    <div class="section grey darken-4" style="height: 100vh;">
       <div id="Home" class="row scrollspy container reveal" style="margin-top: 10%;">
         
         <div class="prince col s3" style="margin-top: 121px;">
@@ -86,8 +86,8 @@
         </div>
         <div class="col s9">
           
-          <h3 class=" header white-text">Home</h3>
-          <h5 class="header white-text bold">Prince Joseph Esteves</h5>
+          <h3 class="header white-text">Home</h3>
+          <h5 class=" white-text bold">Prince Joseph Esteves</h5>
           <p class="white-text">Aspiring <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
           <p class=" white-text text-darken-3 lighten-3">A fresh graduate Bachelor of Science in Information Technology
             from St. Vincent College of Cabuyao.
@@ -101,12 +101,7 @@
     <br>
     <div id="About" class="scrollspy">
       <div class="row container reveal" >
-        <div id="outer" class="z-depth-1" style="margin-top: 50px;">
-          <!-- <video class="video" autoplay loop muted>
-            <source src="assets/video/dope.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video> -->
-        </div>
+        
         <h3  class=" header center bold white-text">About Me</h3>
         <div class="col s3">
           <div class="card">
@@ -152,7 +147,7 @@
     </div>
   </section>
   <section id="Work" class="section scrollspy grey darken-4">
-    <div class="container reveal">
+    <div class="container reveal"  style="margin-bottom: 10%;">
       <h3 class="header center bold white-text">Personal Work</h3>
       <ul class="collapsible popout">
         <li>
@@ -271,8 +266,31 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Contact Me</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          <h5 class="header white-text">Contact Me</h5>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="icon_prefix" type="text" class="validate text-center">
+                  <label for="icon_prefix">Full Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">phone</i>
+                  <input id="icon_telephone" type="tel" class="validate">
+                  <label for="icon_telephone">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="Message" type="text" class="validate">
+                  <label for="Message">Message</label>
+                </div>
+              </div>
+              <div class="center">
+              <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a></div>
+            </form>
+          </div>
         </div>
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Links</h5>

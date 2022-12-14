@@ -1,4 +1,21 @@
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+.navbar-fixed {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.header{
+  font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	font-size: 40px;
+	line-height: 1.7;
+	color: #c4c3ca;
+	overflow-x: hidden;
+	-webkit-transition: all 300ms linear;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+	transition: all 300ms linear;
+}
 .blockblack {
   border-color: #ffffff;
 }
@@ -79,7 +96,7 @@ i.icon-black {
   transform: translate3d(0, 0, 0);
   color: black;
   text-transform: uppercase;
-  font-family: "Playfair Display", serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.4em;
   font-size: 24px;
   font-weight: 700;
@@ -259,4 +276,33 @@ p span.cursor.typing {
   50% { background-color: transparent; }
   99% { background-color: transparent; }
   100%  { background-color: #ccc; }
+}
+.input-field label {
+  color: #fff;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #fff;
+}
+input, select, textarea{
+  color: #fff;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 1px 0 0 #fff;
+}
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 1px 0 0 #fff;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 1px 0 0 #fff;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #fff;
 }
