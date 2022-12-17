@@ -5,11 +5,13 @@
   <title>Portfolio</title>
   <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Inconsolata'>
+  <link rel="stylesheet" href="css/fontawesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="https://kit.fontawesome.com/b20cd0500c.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="navbar-fixed ">
@@ -31,7 +33,7 @@
       <div class='wave -one'></div>
       <div class='wave -two'></div>
       <div class='wave -three'></div>
-      <div class='title'>Prince Joseph Esteves</div>
+      <div class='title '>Prince Joseph Esteves</div>
     </div>
   </div>
   <section>
@@ -87,12 +89,12 @@
         <div class="col s9">
           
           <h3 class="header white-text">Home</h3>
-          <h5 class=" white-text bold">Prince Joseph Esteves</h5>
-          <p class="white-text">Aspiring <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-          <p class=" white-text text-darken-3 lighten-3">A fresh graduate Bachelor of Science in Information Technology
+          <h5 class=" white-text bold subtitle">Prince Joseph Esteves</h5>
+          <p class="white-text subcontext">Aspiring <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+          <p class=" white-text text-darken-3 lighten-3 subcontext">A fresh graduate Bachelor of Science in Information Technology
             from St. Vincent College of Cabuyao.
           </p>
-          <a class=" waves-effect left waves-dark btn white black-text"><i class="material-icons right icon-black">folder_shared</i>Download CV</a>
+          <a class=" waves-effect left waves-dark btn white black-text subcontext"><i class="material-icons right icon-black">folder_shared</i>Download CV</a>
         </div>
       </div>
     </div>
@@ -119,17 +121,17 @@
         </div>
         <div class="col s9">
           <blockquote class="blockblack">
-          <h5 class="white-text text-darken-3 lighten-3">Update </h5>
-          <p class=" white-text text-darken-3 lighten-3">Prince is a front-end developer, and editor. He’s currently a MIS Staff, 
+          <h5 class="white-text text-darken-3 lighten-3 subtitle">Update </h5>
+          <p class=" white-text text-darken-3 lighten-3 subcontext">Prince is a front-end developer, and editor. He’s currently a MIS Staff, 
             studying building microservices applications like Payroll System and Student Information System(SIS).
           </p>
-          <h5 class="white-text text-darken-3 lighten-3">Goals </h5>
-          <p class=" white-text text-darken-3 lighten-3">Prince have a strong desire to create good software that makes the lives 
+          <h5 class="white-text text-darken-3 lighten-3 subtitle">Goals </h5>
+          <p class=" white-text text-darken-3 lighten-3 subcontext">Prince have a strong desire to create good software that makes the lives 
             of individuals so easy. For clients ranging from individuals and small businesses to major enterprise firms, I 
             specialize in developing front-end software.
           </p>
-          <h5 class="white-text text-darken-3 lighten-3">Mission </h5>
-          <p class=" white-text text-darken-3 lighten-3">Prince's mission at Work is to create an environment where employees can thrive and succeed. Everyone strive to foster an atmosphere of 
+          <h5 class="white-text text-darken-3 lighten-3 subtitle">Mission </h5>
+          <p class=" white-text text-darken-3 lighten-3 subcontext">Prince's mission at Work is to create an environment where employees can thrive and succeed. Everyone strive to foster an atmosphere of 
             collaboration, trust, and respect, where individuals are empowered to reach their full potential.
           </p>
           </blockquote>
@@ -142,19 +144,38 @@
     <div class="">
       <div class="row containe revealr">
         <h3 class="header center bold white-text">Skill</h3>
-        <p class="center white-text text-darken-3 lighten-3">List of my skill set</p>
+        <p class="center white-text text-darken-3 lighten-3 subtitle">List of my skill set</p>
+        <div class="marquee">
+          <ul class="marquee-content">
+            <li><i class="fa-brands fa-vuejs"></i></li>
+            <li><i class="fa-brands fa-react"></i></li>
+            <li><i class="fa-brands fa-html5"></i></li>
+            <li><i class="fa-brands fa-css3-alt"></i></li>
+            <li><i class="fa-brands fa-square-js"></i></li>
+            <li><i class="fa-brands fa-npm"></i></li>
+            <li><i class="fa-brands fa-angular"></i></li>
+            <li><i class="fa-brands fa-figma"></i></li>
+            <li><i class="fa-brands fa-android"></i></li>
+            <li><i class="fa-brands fa-python"></i></li>
+            <li><i class="fa-brands fa-yarn"></i></li>
+            <li><i class="fa-brands fa-unity"></i></li>
+            <li><i class="fa-brands fa-android"></i></li>
+            <li><i class="fa-brands fa-android"></i></li>
+
+          </ul>
+        </div>
       </div>
     </div>
   </section>
   <section id="Work" class="section scrollspy grey darken-4">
     <div class="container reveal"  style="margin-bottom: 10%;">
       <h3 class="header center bold white-text">Personal Work</h3>
-      <ul class="collapsible popout">
+      <ul class="collapsible popout" data-collapsible="accordion">
         <li>
-          <div class="collapsible-header"><i class="material-icons">person</i>Portrait</div>
+          <div class="collapsible-header subtitle"><i class="material-icons">person</i>Portrait</div>
           <div class="collapsible-body grey">
             <div class="row">
-              <p class="center white-text text-darken-3 lighten-3">Photography Collection</p>
+              <p class="center white-text text-darken-3 lighten-3 subcontext">Photography Collection</p>
               <div class="col s3">
                 <div class="card-panel" style="border-radius: 3px;">
                   <img class="materialboxed responsive-img" src="assets/portrait/1.webp" height="260px">
@@ -201,10 +222,10 @@
           </div>
         </li>
         <li>
-          <div class="collapsible-header"><i class="material-icons">account_balance</i>Landscape</div>
+          <div class="collapsible-header subtitle"><i class="material-icons">account_balance</i>Landscape</div>
           <div class="collapsible-body grey">
             <div class="row">
-              <p class="center white-text text-darken-3 lighten-3">Photography Collection</p>
+              <p class="center white-text text-darken-3 lighten-3 subcontext">Photography Collection</p>
               <div class="col s4">
                 <div class="card-panel" style="border-radius: 3px;">
                   <img class="materialboxed responsive-img" src="assets/landscape/1.jpg" height="260px">
@@ -224,7 +245,7 @@
           </div>
         </li>
         <li>
-          <div class="collapsible-header"><i class="material-icons">border_color</i>Typography</div>
+          <div class="collapsible-header subtitle"><i class="material-icons">border_color</i>Typography</div>
           <div class="collapsible-body grey">
             <div class="row">
               <p class="center white-text text-darken-3 lighten-3">Typography</p>
@@ -247,7 +268,7 @@
           </div>
         </li>
         <li>
-          <div class="collapsible-header"><i class="material-icons">web</i>Website</div>
+          <div class="collapsible-header subtitle"><i class="material-icons">web</i>Website</div>
           <div class="collapsible-body grey">
             <div class="row">
               <p class="center white-text text-darken-3 lighten-3">Deploy Website</p>
@@ -277,7 +298,7 @@
                 </div>
                 <div class="input-field col s6">
                   <i class="material-icons prefix">phone</i>
-                  <input id="icon_telephone" type="tel" class="validate">
+                  <input id="icon_telephone" type="email" class="validate">
                   <label for="icon_telephone">Email</label>
                 </div>
               </div>
@@ -288,17 +309,17 @@
                 </div>
               </div>
               <div class="center">
-              <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a></div>
+              <a class="waves-effect waves-light btn grey subtitle"><i class="material-icons left">send</i>Submit</a></div>
             </form>
           </div>
         </div>
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Links</h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            <li><a class="grey-text text-lighten-3 fa fa-facebook" href="https://www.facebook.com/Nyanta25/"> Facebook</a></li>
+            <li><a class="grey-text text-lighten-3 fa fa-github" href="https://github.com/Nyanta2598"> Github</a> </li>
+            <li><a class="grey-text text-lighten-3 fa fa-linkedin" href="https://www.linkedin.com/in/prince-joseph-esteves-8ab45a171/"> LinkedIn</a> </li>
+            <li><a class="grey-text text-lighten-3 fa fa-instagram" href="https://www.instagram.com/princeesteves/"> Instagram</a> </li>
           </ul>
         </div>
       </div>
@@ -306,7 +327,7 @@
     <div class="footer-copyright z-depth-3">
       <div class="container">
         © 2022 Copyright
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        <a class="grey-text text-lighten-4 right" href="#!">@pjeseves15</a>
       </div>
     </div>
   </footer>
