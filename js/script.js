@@ -1,3 +1,6 @@
+//------------------------------------------------------------------------------------------
+// Initiator MaterializeCSS
+window.addEventListener("scroll", reveal);
 $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.parallax').parallax();
@@ -5,7 +8,8 @@ $(document).ready(function(){
     $('.scrollspy').scrollSpy();
     $('.collapsible').collapsible();
 });
-
+//------------------------------------------------------------------------------------------
+// Reveal on scroll
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
   for (var i = 0; i < reveals.length; i++) {
@@ -19,9 +23,8 @@ function reveal() {
     }
   }
 }
-  
-window.addEventListener("scroll", reveal);
-
+//------------------------------------------------------------------------------------------
+// Typing Animation
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
@@ -73,7 +76,8 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
-
+//------------------------------------------------------------------------------------------
+// Marquee Animation
 const root = document.documentElement;
 const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
 const marqueeContent = document.querySelector("ul.marquee-content");
@@ -83,3 +87,4 @@ root.style.setProperty("--marquee-elements", marqueeContent.children.length);
 for(let i=0; i<marqueeElementsDisplayed; i++) {
   marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
+//------------------------------------------------------------------------------------------
