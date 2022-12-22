@@ -27,6 +27,10 @@
 .blockblack {
   border-color: #ffffff;
 }
+.parallax-container {
+  height: 100vh;
+}
+    
 #outer {
   width: 1065px;
   height: 200px;
@@ -92,7 +96,10 @@ i.icon-black {
   z-index: 11;
   transform: translate3d(0, 0, 0);
 }
-
+.text{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
 .title {
   position: absolute;
   left: 0;
@@ -341,14 +348,7 @@ input, select, textarea{
   content: "";
   z-index: 1;
 }
-.marquee:before {
-  left: 0;
-  background: linear-gradient(to right, #111 0%, transparent 100%);
-}
-.marquee:after {
-  right: 0;
-  background: linear-gradient(to left, #111 0%, transparent 100%);
-}
+
 .marquee-content {
   list-style: none;
   height: 100%;
