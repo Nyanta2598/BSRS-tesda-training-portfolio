@@ -7,6 +7,7 @@ $(document).ready(function(){
     $('.materialboxed').materialbox();
     $('.scrollspy').scrollSpy();
     $('.collapsible').collapsible();
+    $('.tooltipped').tooltip();
 });
 //------------------------------------------------------------------------------------------
 // Reveal on scroll
